@@ -40,6 +40,7 @@ h2{
 .opcion{
     display: flex;
 }
+
 input{
     margin-right: 5%;
 }

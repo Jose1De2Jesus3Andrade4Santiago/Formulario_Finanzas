@@ -43,3 +43,34 @@ body{
     position: relative;
 }
 
+@media only screen and (max-width: 600px){
+    body{
+        height: 1500px;
+    }
+    .Formulario{
+        flex-direction: column;
+        width: 90vw;
+        height: 95%;
+        top: 5px;
+    }
+    .preguntaMultiple{
+        top: 10px;
+    }
+    .Presentacion{
+        width: 100%;
+        height: 50%;
+    }
+    .formulario{
+        width: 100%;
+        height: 50%;
+    }
+
+    .pregunta{
+        margin-top: 20px;
+    }
+    .botones{
+        margin-bottom: 0;
+    }
+
+
+}
