@@ -1,0 +1,7 @@
+---
+applications:
+- buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+  host: simple-website-portafolios_inversion
+  name: simple-website-portafolios_inversion
+  memory: 64M
+  stack: cflinuxfs2
