@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/formulario.css">
     <link rel="stylesheet" href="css/Instrucciones.css">
-     
+     <link rel="stylesheet" href="css/lastPages.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
 <body>
     
+
     <section class="Formulario">
         <div class="Presentacion">
            <div id="description">
@@ -31,35 +32,31 @@
             <div class=" preguntaMultiple ">
                 <h3 class="pregunta">¿Cuál es el objetivo fudamental de su inversion?</h3>
                    
-                <div class="opciones">
+                <div class= "opciones" >
                     <div class="opcion">
-                        <input type="radio" name ="pregunta1" value ="1">
+                        <input type="radio" name ="pregunta 1" value ="A">
                         <p>  Invertir en valores que son facilmente convertibles en efectivo(Liquidez)</p>
                     </div>
                    <div class="opcion">
-                        <input type="radio" name ="pregunta1" value ="2">
+                        <input type="radio" name ="pregunta 1" value ="B">
                         <p>Tratar de generar una renta prediodica de la inversion en forma de intereses y / o dividendos(Ingresos)</p>
                    </div>
 
                    <div class="opcion">
-                        <input type="radio" name ="pregunta1" value ="3">
+                        <input type="radio" name ="pregunta 1" value ="C">
                         <p>
                             El objetivo de las inversiones es lograr un crecimiento a largo plzo del capital a traves de la reinversion de los rendimientos en el principal(Crecimiento)
                         </p>
                    </div>
 
                    <div class="opcion">
-                        <input type="radio" name ="pregunta1" value ="4">
+                        <input type="radio" name ="pregunta 1" value ="D">
                         <p>Se busca realizar inversiones con el objetivo de obtener mayores rentabilidades a cambio de mayores niveles a la exposición al riesgo(Especulativo)</p>
                    </div>
-                
                 </div>
 
-                <div class="botones">
-                    <button class="botonPrevious">
-                        <i class="fas fa-arrow-left"></i>
-                    </button>
-                    <button class="botonNext">
+                <div class="botones" id = "primerBoton" >
+                    <button class="botonNext" onclick="saveValue('pregunta 1');">
                         <i class="fas fa-arrow-right"></i>
                     </button>
                 </div>
@@ -71,23 +68,23 @@
                    
                 <div class="opciones">
                     <div class="opcion">
-                        <input type="radio" name ="pregunta1" value ="1">
+                        <input type="radio" name ="pregunta 2" value ="A">
                         <p> Menor de 25 años.</p>
                     </div>
                    <div class="opcion">
-                        <input type="radio" name ="pregunta1" value ="2">
+                        <input type="radio" name ="pregunta 2" value ="B">
                         <p>Entre 25-40 años.</p>
                    </div>
 
                    <div class="opcion">
-                        <input type="radio" name ="pregunta1" value ="3">
+                        <input type="radio" name ="pregunta 2" value ="C">
                         <p>
                             Entre 40-60 años.
                         </p>
                    </div>
 
                    <div class="opcion">
-                        <input type="radio" name ="pregunta1" value ="4">
+                        <input type="radio" name ="pregunta 2" value ="D">
                         <p>Más de 60 años.</p>
                    </div>
                 
@@ -97,7 +94,7 @@
                     <button class="botonPrevious">
                         <i class="fas fa-arrow-left"></i>
                     </button>
-                    <button class="botonNext">
+                    <button class="botonNext" onclick="saveValue('pregunta 2');">
                         <i class="fas fa-arrow-right"></i>
                     </button>
                 </div>
@@ -110,11 +107,11 @@
                    
                 <div class="opciones">
                     <div class="opcion">
-                        <input type="radio" name ="pregunta1" value ="1">
+                        <input type="radio" name ="pregunta 3" value ="A">
                         <p> Si</p>
                     </div>
                    <div class="opcion">
-                        <input type="radio" name ="pregunta1" value ="2">
+                        <input type="radio" name ="pregunta 3" value ="B">
                         <p>No</p>
                    </div>
                 
@@ -124,7 +121,7 @@
                     <button class="botonPrevious">
                         <i class="fas fa-arrow-left"></i>
                     </button>
-                    <button class="botonNext">
+                    <button class="botonNext" onclick="saveValue('pregunta 3');">
                         <i class="fas fa-arrow-right"></i>
                     </button>
                 </div>
@@ -136,15 +133,15 @@
                    
                 <div class="opciones">
                     <div class="opcion">
-                        <input type="radio" name ="pregunta1" value ="1">
+                        <input type="radio" name ="pregunta 4" value ="A">
                         <p> Menos de 1 años.</p>
                     </div>
                    <div class="opcion">
-                        <input type="radio" name ="pregunta1" value ="2">
+                        <input type="radio" name ="pregunta 4" value ="B">
                         <p>Entre 1 y 3 años.</p>
                    </div>
                    <div class="opcion">
-                    <input type="radio" name ="pregunta1" value ="2">
+                    <input type="radio" name ="pregunta 4" value ="C">
                     <p>Más de 3 años</p>
                     </div>
                </div>
@@ -153,7 +150,37 @@
                     <button class="botonPrevious">
                         <i class="fas fa-arrow-left"></i>
                     </button>
-                    <button class="botonNext">
+                    <button class="botonNext" onclick="saveValue('pregunta 4');">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                 </div>
+                
+            </div>
+
+
+            <div class="preguntaMultiple innactive">
+                <h3 class="pregunta">¿Conoce alguna de las siguientes opciones de inversión?</h3>
+                   
+                <div class="opciones">
+                    <div class="opcion">
+                        <input type="radio" name ="pregunta 5" value ="A">
+                        <p>Opciones de Inversión en el mercado nacional.</p>
+                    </div>
+                   <div class="opcion">
+                        <input type="radio" name ="pregunta 5" value ="B">
+                        <p>Opciones de Inversión en el mercado internacional.</p>
+                   </div>
+                   <div class="opcion">
+                    <input type="radio" name ="pregunta 5" value ="C">
+                    <p>No conozco ninguna</p>
+                    </div>
+               </div>
+
+               <div class="botones">
+                    <button class="botonPrevious">
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                    <button class="botonNext" onclick="saveValue('pregunta 5');">
                         <i class="fas fa-arrow-right"></i>
                     </button>
                  </div>
@@ -166,11 +193,11 @@
                    
                 <div class="opciones">
                     <div class="opcion">
-                        <input type="radio" name ="pregunta1" value ="1">
-                        <p> Si ¿Cuáles?</p>
+                        <input type="radio" name ="pregunta 6" value ="A">
+                        <p> Si </p>
                     </div>
                    <div class="opcion">
-                        <input type="radio" name ="pregunta1" value ="2">
+                        <input type="radio" name ="pregunta 6" value ="B">
                         <p>No</p>
                    </div>
                 
@@ -180,7 +207,7 @@
                     <button class="botonPrevious">
                         <i class="fas fa-arrow-left"></i>
                     </button>
-                    <button class="botonNext">
+                    <button class="botonNext" onclick="saveValue('pregunta 6');">
                         <i class="fas fa-arrow-right"></i>
                     </button>
                 </div>
@@ -192,27 +219,27 @@
                    
                 <div class="opciones">
                     <div class="opcion">
-                        <input type="radio" name ="pregunta1" value ="1">
+                        <input type="radio" name ="pregunta 7" value ="A">
                         <p>Análisis elaborados personalmente sobre el instrumento financiero.</p>
                     </div>
                    <div class="opcion">
-                        <input type="radio" name ="pregunta1" value ="2">
+                        <input type="radio" name ="pregunta 7" value ="B">
                         <p>Información técnica suministrada por su Casa de Bolsa</p>
                    </div>
 
                    <div class="opcion">
-                    <input type="radio" name ="pregunta1" value ="2">
+                    <input type="radio" name ="pregunta 7" value ="C">
                     <p>El criterio de su asesor.</p>
                     </div>
 
                     
                    <div class="opcion">
-                    <input type="radio" name ="pregunta1" value ="2">
+                    <input type="radio" name ="pregunta 7" value ="D">
                     <p>Experiencias anteriores</p>
                     </div>
 
                     <div class="opcion">
-                        <input type="radio" name ="pregunta1" value ="2">
+                        <input type="radio" name ="pregunta 7" value ="E">
                         <p>Otras</p>
                     </div>
                 
@@ -222,7 +249,7 @@
                     <button class="botonPrevious">
                         <i class="fas fa-arrow-left"></i>
                     </button>
-                    <button class="botonNext">
+                    <button class="botonNext" onclick="saveValue('pregunta 7');">
                         <i class="fas fa-arrow-right"></i>
                     </button>
                 </div>
@@ -234,23 +261,23 @@
                    
                 <div class="opciones">
                     <div class="opcion">
-                        <input type="radio" name ="pregunta1" value ="1">
+                        <input type="radio" name ="pregunta 8" value ="A">
                         <p> No me siento comodo con las fluctuaciones</p>
                     </div>
                    <div class="opcion">
-                        <input type="radio" name ="pregunta1" value ="2">
+                        <input type="radio" name ="pregunta 8" value ="B">
                         <p>Liquidar inmediatamente las posiciones ante tales fluctuaciones</p>
                    </div>
 
                    <div class="opcion">
-                        <input type="radio" name ="pregunta1" value ="3">
+                        <input type="radio" name ="pregunta 8" value ="C">
                         <p>
                             Esperar un tiempo prudente para analizar la tendencia del mercado
                         </p>
                    </div>
 
                    <div class="opcion">
-                        <input type="radio" name ="pregunta1" value ="4">
+                        <input type="radio" name ="pregunta 8" value ="D">
                         <p>Mantendría las posiciones esperando una recuperación en el mediano o largo plazo.</p>
                    </div>
                 
@@ -260,7 +287,7 @@
                     <button class="botonPrevious">
                         <i class="fas fa-arrow-left"></i>
                     </button>
-                    <button class="botonNext">
+                    <button class="botonNext" onclick="saveValue('pregunta 8');">
                         <i class="fas fa-arrow-right"></i>
                     </button>
                 </div>
@@ -272,23 +299,23 @@
                    
                 <div class="opciones">
                     <div class="opcion">
-                        <input type="radio" name ="pregunta1" value ="1">
+                        <input type="radio" name ="pregunta 9" value ="A">
                         <p> -5%</p>
                     </div>
                    <div class="opcion">
-                        <input type="radio" name ="pregunta1" value ="2">
+                        <input type="radio" name ="pregunta 9" value ="B">
                         <p>-10%</p>
                    </div>
 
                    <div class="opcion">
-                        <input type="radio" name ="pregunta1" value ="3">
+                        <input type="radio" name ="pregunta 9" value ="C">
                         <p>
                             -20%
                         </p>
                    </div>
 
                    <div class="opcion">
-                        <input type="radio" name ="pregunta1" value ="4">
+                        <input type="radio" name ="pregunta 9" value ="D">
                         <p>No me inquieto</p>
                    </div>
                 
@@ -298,7 +325,7 @@
                     <button class="botonPrevious">
                         <i class="fas fa-arrow-left"></i>
                     </button>
-                    <button class="botonNext">
+                    <button class="botonNext" onclick="saveValue('pregunta 9');">
                         <i class="fas fa-arrow-right"></i>
                     </button>
                 </div>
@@ -311,28 +338,99 @@
                    
                 <div class="opciones">
                     <div class="opcion">
-                        <input type="radio" name ="pregunta1" value ="1">
+                        <input type="radio" name ="pregunta 10" value ="A">
                         <p>Mis inversiones deben ser lo más seguras posibles , aunque eso implique que los rendimientos sean bajos</p>
                     </div>
                    <div class="opcion">
-                        <input type="radio" name ="pregunta1" value ="2">
+                        <input type="radio" name ="pregunta 10" value ="B">
                         <p>Me interesan rendimientos competitivos manteniendo una adecuada seguridad , pero sabiendo que estoy expuesto a riesgos de pérdidas ocasionales </p>
                    </div>
 
                    <div class="opcion">
-                        <input type="radio" name ="pregunta1" value ="3">
+                        <input type="radio" name ="pregunta 10" value ="C">
                         <p>
                             Busco rendimientos superiores a los de mercado y eestoy dispuesto a aceptar un riesgo moderado para obtener estos rendimientos.
                         </p>
                    </div>
 
                    <div class="opcion">
-                        <input type="radio" name ="pregunta1" value ="4">
+                        <input type="radio" name ="pregunta 10" value ="D">
                         <p>Espero altos rendimientos en el largo plazo, aunque ello signifique aceptar fluctuaciones en los resusltados de corto plazo y asumir mayores niveles de riesgo</p>
                    </div>
                 
                 </div>
 
+                <div class="botones">
+                    <button class="botonPrevious">
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                    <button class="botonNext" onclick="saveValue('pregunta 10');">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class=" preguntaMultiple innactive">
+                <h3 class="pregunta">Defina su moneda de preferencia para realizar inversiones </h3>
+                   
+                <div class="opciones">
+                    <div class="opcion">
+                        <input type="radio" name ="pregunta 11" value ="A">
+                        <p>Pesos</p>
+                    </div>
+                   <div class="opcion">
+                        <input type="radio" name ="pregunta 11" value ="B">
+                        <p>Dólares</p>
+                   </div>
+
+                   <div class="opcion">
+                    <input type="radio" name ="pregunta 11" value ="C">
+                    <p>Euros</p>
+                    </div>
+
+                    <div class="opcion">
+                            <input type="radio" name ="pregunta 11" value ="D">
+                            <p>Otrta</p>
+                    </div>
+                </div>
+
+                <div class="botones">
+                    <button class="botonPrevious">
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                    <button class="botonNext" onclick="saveValue('pregunta 11');">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div> 
+
+            <div class=" preguntaMultiple innactive">
+                <h3 class="pregunta">INVERSIONISTA SOFISTICADO</h3>
+                   
+                <p class="texto">
+                    Persona fisica o moral cuyo patrimonio sea superior a un millón de dólares
+                    o su equivalente, o sus ingresos anuales superiores a 150 mil dólares o su equivalente;
+                    o la persona física que cuente con conocimientos suficientes para evaluar y aceptar 
+                    los riesgos de su inversion.
+
+                    En caso de que el inversionista manifieste que tiene la capacidad sufiente para asumir los riesgos
+                    que representean las inversiones en Mercado de Valores bajo el PERFIL SOFISTICADO;
+                    además de la información que la institucion financiera le solicite,deberá manifestar
+                    expresamente que cumple al menos con los sigientes criterios:
+                    <br>
+                    <br>
+                    *Tener conocimiento y experiencia sobre los mercados en los que va a Invertir
+                    <br>
+                    *Es capaz de valorar los riesgos y resultados de su inversión.
+                    <br>
+                    *Es financieramente capaz de asumir los riesgos de la inversión.
+                    <br>
+                    <br>
+                    Todo inversionista sofisticado deberá manifestar expresamente que es capaz de protegerse a si mismo,
+                    y por lo tanto , la institución al momento de la inversión, sólo está obligada a 
+                    proporcionarle información sobre los riesgos y restricciones de la inversión que solicita.
+                </p>
+                
                 <div class="botones">
                     <button class="botonPrevious">
                         <i class="fas fa-arrow-left"></i>
@@ -343,17 +441,77 @@
                 </div>
             </div>
 
-    
+            <div class=" preguntaMultiple innactive">
+                <h3 class="pregunta">INVERSIONISTA SOFISTICADO</h3>
+                   
+                <p class="texto">
+                    Además, hacemos de su conocimiento lo dispueso en "La ley del Mercadi de valores",seccion
+                    3 relatica a las "Prácticas de venta"; articulos 188 y 190 que se citan a continuación.
+                    <br>
+                    <br>
+                    <Strong> "Arcituclo 188.-</Strong> Las casas de bolsa, en el manejo de las cuentas de sus clientes,
+                     deberan actuar profesionalmente y tendrán prohibido:
+                     <br>
+                     Celebrar operaciones con valores cuya cotizacion se encuentre suspendida. <br>
+                    Garantizar, directa o indirectamente, rendimientos; asumir la oblicacion de devolcer la suerte
+                    principal de los recursos que les hayan sido entregados para la celebracion de operaciones con valore,
+                     salvo tratandose de reportos o prestamos de valores; responsabilizarse de las pérdidas que puedan sufrir 
+                     sus clientes como consecuencias de dichas operaciones, o en cualquier forma asumir el riesgo de 
+                     las variaciones en el diferencia del prercio o tasa a favor de sus clientes.        
+                     <br> <br> <br> <br><br>
+                     
+                </p>
+                
+                <div class="botones">
+                    <button class="botonPrevious">
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                    <button class="botonNext">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class=" preguntaMultiple innactive">
+                <h3 class="pregunta">INVERSIONISTA SOFISTICADO</h3>
+                   
+                <p class="texto">
+                     <Strong> "Arcituclo 190.-</Strong> Las casas de bolsa que reciban instrucciones de cleintes
+                     o realicen operaciones por cuenta de éstos, deberán contar con lineamientos y politicas tendientes a identificar
+                     y conocer a sus clientes , asi como para determinar sus objetivos de inversión.Asimismo, 
+                     las cases de bolsa deberán proporcionar a su clientela la información necesaria para la toma de decisiones de inversión,
+                     considerando los perfiles que definan al efecto, ajustandose a las disposiciones de carácter que expida la Comisión.
+                     <br> <br>
+                     Al operar, las casas de bolsa se ajustarán al perfil que corresponda al cliente. <br> <br>
+                     Cuando se contraten operaciones y servicios sobre valores que no sean acordes con el perfil del cliente,
+                      deberán contarse con el conocimiento expreso del mismo. Las casas de bolsa serán responsables de los daños
+                      y perjuicios ocasionados al cliente por el cumplimiento a lo previsto en este párrafo.
+                      <br> <br> <br> <br> <br>
+
+                </p>
+                
+                <div class="botones">
+                    <button class="botonPrevious">
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                    <button class="botonNext">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+               
+
             <div class=" preguntaMultiple innactive">
                 <h3 class="pregunta">De acuerdo a la definicion anterior ¿Se considera como un inversionista sofisticado?</h3>
                    
                 <div class="opciones">
                     <div class="opcion">
-                        <input type="radio" name ="pregunta1" value ="1">
+                        <input type="radio" name ="pregunta 12" value ="A">
                         <p>Si</p>
                     </div>
                    <div class="opcion">
-                        <input type="radio" name ="pregunta1" value ="2">
+                        <input type="radio" name ="pregunta 12" value ="B">
                         <p>No</p>
                    </div>
                 
@@ -363,7 +521,7 @@
                     <button class="botonPrevious">
                         <i class="fas fa-arrow-left"></i>
                     </button>
-                    <button class="botonNext">
+                    <button class="botonNext" onclick="saveValue('pregunta 12');">
                         <i class="fas fa-arrow-right"></i>
                     </button>
                 </div>
@@ -374,11 +532,11 @@
                    
                 <div class="opciones">
                     <div class="opcion">
-                        <input type="radio" name ="pregunta1" value ="1">
+                        <input type="radio" name ="pregunta 13" value ="A">
                         <p>Si</p>
                     </div>
                    <div class="opcion">
-                        <input type="radio" name ="pregunta1" value ="2">
+                        <input type="radio" name ="pregunta 13" value ="B">
                         <p>No</p>
                    </div>
                 
@@ -388,7 +546,7 @@
                     <button class="botonPrevious">
                         <i class="fas fa-arrow-left"></i>
                     </button>
-                    <button class="botonNext">
+                    <button class="botonNext" onclick="saveValue('pregunta 13');">
                         <i class="fas fa-arrow-right"></i>
                     </button>
                 </div>
@@ -399,11 +557,20 @@
                    
                 <div class="opciones">
                     <div class="opcion">
-                        <input type="radio" name ="pregunta1" value ="1">
-                        <p>Si</p>
+                        <input type="radio" name ="pregunta 14" value ="A">
+                        <p id="parrafoSpecial">Si; En:  
+                            <select id="inversiones" name="inversion" multiple>
+                                <option value="volvo">Tecnología (software, equipo)</option>
+                                <option value="saab">Inversión Agricola(semilla, cultivos, maquinaria,etc)</option>
+                                <option value="fiat">Inversión en comercio</option>
+                                <option value="audi">Inversión en infraestructura</option>
+                                <option value="audi">Inversión inmobiliaria</option>
+                                <option value="audi">Otras</option>
+                              </select>    
+                        </p>
                     </div>
                    <div class="opcion">
-                        <input type="radio" name ="pregunta1" value ="2">
+                        <input type="radio" name ="pregunta 14" value ="B">
                         <p>No</p>
                    </div>
                 
@@ -413,8 +580,101 @@
                     <button class="botonPrevious">
                         <i class="fas fa-arrow-left"></i>
                     </button>
+                    <button class="botonNext"  onclick="printAnswers('pregunta 14');">
+                       <h5>Finalizar</h5>
+                    </button>
                 </div>
             </div> 
+
+
+            <div class=" preguntaMultiple innactive">
+                <h3 class="pregunta">TUS RESPUESTAS:</h3>
+                   
+                <div class="opciones">
+                    <div class="respuesta">
+                        <h6>Pretunta 1: </h6>
+                        <label class="contenido respuesta" id="resp pregunta 1"></label>
+                    </div>
+                    <div class="respuesta">
+                        <h6>Pretunta 2: </h6>
+                        <label class="contenido respuesta" id="resp pregunta 2"></label>
+                    </div>
+                    <div class="respuesta">
+                        <h6>Pretunta 3: </h6>
+                        <label class="contenido respuesta" id="resp pregunta 3"></label>
+                    </div>
+                    <div class="respuesta">
+                        <h6>Pretunta 4: </h6>
+                        <label class="contenido respuesta" id="resp pregunta 4"></label>
+                    </div>
+                    <div class="respuesta">
+                        <h6>Pretunta 5: </h6>
+                        <label class="contenido respuesta" id="resp pregunta 5"></label>
+                    </div>
+                    <div class="respuesta">
+                        <h6>Pretunta 6: </h6>
+                        <label class="contenido respuesta" id="resp pregunta 6"></label>
+                    </div>
+                    <div class="respuesta">
+                        <h6>Pretunta 7: </h6>
+                        <label class="contenido respuesta" id="resp pregunta 7"></label>
+                    </div>
+                    <div class="respuesta">
+                        <h6>Pretunta 8: </h6>
+                        <label class="contenido respuesta" id="resp pregunta 8"></label>
+                    </div>
+                    <div class="respuesta">
+                        <h6>Pretunta 9: </h6>
+                        <label class="contenido respuesta" id="resp pregunta 9"></label>
+                    </div>
+                    <div class="respuesta">
+                        <h6>Pretunta 10: </h6>
+                        <label class="contenido respuesta" id="resp pregunta 10"></label>
+                    </div>
+                    <div class="respuesta">
+                        <h6>Pretunta 11: </h6>
+                        <label class="contenido respuesta" id="resp pregunta 11"></label>
+                    </div>
+                    <div class="respuesta">
+                        <h6>Pretunta 12: </h6>
+                        <label class="contenido respuesta" id="resp pregunta 12"></label>
+                    </div>
+                    <div class="respuesta">
+                        <h6>Pretunta 13: </h6>
+                        <label class="contenido respuesta" id="resp pregunta 13"></label>
+                    </div>
+                    <div class="respuesta">
+                        <h6>Pretunta 14: </h6>
+                        <label class="contenido respuesta" id="resp pregunta 14"></label>
+                    </div>
+                </div>
+
+                <div class="botones">
+                    <button class="botonPrevious">
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                    <button class="botonNext" onclick="InversorType();">
+                       <h5 id="fin">Termiar</h5>
+                    </button>
+                </div>
+            </div> 
+
+            
+            <div class=" preguntaMultiple innactive">
+                   
+                <div class="opciones" id="resultadoPage">
+                    <h3>FELICIDADES! <p>Eres un inversionista:</p></h3>
+                    
+                    <label id="tipo de inversor"></label>
+                </div>
+                <div class="botones">
+                    <button class="botonPrevious">
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                </div>
+            </div> 
+
+
 
             
         </div>

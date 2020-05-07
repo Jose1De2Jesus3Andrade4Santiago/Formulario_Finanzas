@@ -47,6 +47,7 @@ input{
 .botones{
     width: 90%;
     height: 10%;
+    margin-top: 5%;
     margin-bottom: 5%;
     display: flex;
     justify-content: space-between;
@@ -70,4 +71,19 @@ button i{
 .preguntaMultiple.active{
     opacity: 1;
     pointer-events: all; 
+}
+
+.texto{
+    text-align: justify;
+}
+
+#inversiones{
+    font-size: 15px;
+    margin-left: 10px;
+    width: 70%;
+    justify-content: end;
+}
+
+#parrafoSpecial{
+    display: flex;
 }
